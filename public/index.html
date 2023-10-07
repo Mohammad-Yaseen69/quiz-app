@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mooli&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="start">
+            <h1>Quiz App</h1>
+            <p>This is an Quiz App in which you can test your Knowledge. The questions are mostly based on tech or
+                programming. I hope you like it ♥</p>
+            <button onclick="startQuiz()" class="start-btn">Start</button>
+        </div>
+
+        <div class="rules-main">
+            <h4>Some Rules of this Quiz</h4>
+
+            <div class="rules">
+                <h3>1.You Will have <span>10 Seconds </span>for each question.</h3>
+                <h3>2.Once you select the answers it can't be undone.</h3>
+                <h3>3.You can't Select any option after times up</h3>
+                <h3>4.You will get point on the basis of correct answers.</h3>
+            </div>
+
+            <div class="buttons">
+                <button onclick="exitBtn()" class="exit-btn">Exit</button>
+                <button onclick="startingQuizbtn()" class="start-btn">Start</button>
+            </div>
+        </div>
+
+        <div id="quiz-box">
+            <div class="quiz-box-top">
+                <h1>
+                    Quiz Application
+                </h1>
+                <div class="timer">
+                    <h2>
+                        Time Left <span class="time-left">10</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="quiz-main">
+
+                <h1 class="question"></h1>
+
+                <div class="options">
+
+                    <div class="option">
+                       
+                    </div>
+                    <div class="option">
+                     
+                    </div>
+                    <div class="option">
+                   
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quiz-footer">
+                <h2>
+                    <span class="question-number">1</span> of 10 Questions
+                </h2>
+
+                <div class="next-btn">
+                    <button onclick="nextBtn()" class="start-btn">NEXT</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-box">
+            <i class="fa-solid fa-crown fa-lg"></i>
+            <h2>Your Score is <span class="score">2</span> out of 100</h2>
+            <div class="buttons">
+                <button onclick="replayBtn()" class="exit-btn">Replay</button>
+                <button onclick="quitBtn()" class="start-btn">Quit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
